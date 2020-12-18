@@ -1,0 +1,134 @@
+.navbar .search-engine-v2 .query-2 {
+  padding: 10px 25px;
+  width: 300px;
+  font-size: 18px;
+  border-radius: 8px 8px 8px 8px;
+  border: 2px solid;
+  margin-top: 24px;
+  float: right;
+  margin-right: 15px;
+}
+
+.navbar .search-engine-v2 .search-list-2 {
+  position: fixed;
+  top: 70px;
+  right: 15px;
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  width: 354px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.navbar .search-engine-v2 .search-list-2 .search-elements {
+  padding: 8px 25px 5px 25px;
+  font-weight: 200;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar .back-to-main {
+  padding-left: 0;
+  font-weight: 200;
+  list-style: none;
+  text-align: center;
+}
+
+.sidebar .search-engine-v3 .query-3 {
+  position: relative;
+  padding: 10px 25px;
+  font-size: 15px;
+  border: 1px solid;
+  margin-top: 16px;
+  border-left: none;
+  border-right: none;
+  width: 200px;
+  display: none;
+}
+
+.sidebar .search-engine-v3 .search-list-3 {
+  top: 70px;
+  right: 15px;
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  width: 250px;
+  margin: 10px auto;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.sidebar .search-engine-v3 .search-list-3 .search-elements {
+  padding: 8px 25px 5px 25px;
+  font-weight: 200;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 12px;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.wrapper .site-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: #dbdbdb;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.wrapper .site-name label {
+  letter-spacing: 2px;
+}
+
+.wrapper .site-row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.wrapper .site-row-1 .site-photo-1 {
+  padding: 16px;
+  border-bottom: none;
+}
+
+.wrapper .site-row-1 .site-photo-1 .left-photo {
+  width: 300px;
+  border: 1px #dbdbdb solid;
+  border-radius: 5px;
+  height: 194px;
+}
+
+.wrapper .site-row-1 .site-photo-1 .left-name {
+  font-size: 18px;
+  margin-top: 6px;
+  text-align: center;
+  color: #dbdbdb;
+}
+
+.wrapper .site-row-1 .site-text-1 {
+  padding: 10px 96px 16px 16px;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.6;
+  border-left: 1px #dbdbdb solid;
+}
+
+.wrapper .site-row-1 .site-text-1 label {
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=subsite.css.map */

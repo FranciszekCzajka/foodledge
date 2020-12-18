@@ -11,9 +11,8 @@
 
     <title>PRODŻEKTAJL</title>
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/add.css">
-    <link rel="stylesheet" type="text/css" href="css/subsites.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/subsite.css">
     <link rel="stylesheet" type="text/css" href="css/dark.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -38,7 +37,7 @@
     </nav>
 
     <nav class="sidebar">
-        <div class="dismiss">
+      <div class="dismiss">
             <i class="fas fa-arrow-left"></i>
         </div>
 
@@ -74,13 +73,6 @@
     </nav>
 
     <div class="wrapper">
-
-      <div class="div-menu-button">
-        <button type="submit" class="btn-menu" id="sidebarCollapse" name="menu">
-          <i class="fas fa-align-left"></i>
-        </button>
-      </div>
-
       <div class="site-name">
       </div>
 
