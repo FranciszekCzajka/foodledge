@@ -1,0 +1,19 @@
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.wrapper input[type="text"]').on("keyup input", function(){
+            var inputVal = $(this).val();
+            var resultDropdown = $(this).siblings(".search-list");
+            if(inputVal.length){
+                $.get("skryptunio.php", {term: inputVal}).done(function(data){
+                    resultDropdown.html(data);
+                });
+            } else{
+                resultDropdown.empty();
+            }
+        });
+        $(document).on("click", ".search-list li", function(){
+            $(this).parents(".wrapper").find('input[type="text"]').val($(this).text());
+            $(this).parent(".search-list").empty();
+        });
+    });
+    </script>
