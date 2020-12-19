@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "html.format.wrapLineLength": 0,
+    "html.format.wrapAttributes": "force-aligned",
+    "prettier.printWidth": 10000,
+    "grunt.autoDetect": "off",
+    "prettier.tabWidth": 4
+}

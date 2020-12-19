@@ -7,6 +7,9 @@
   margin-top: 24px;
   float: right;
   margin-right: 15px;
+  background-color: #141414;
+  color: #dbdbdb;
+  border-color: #dbdbdb;
 }
 
 .navbar .search-engine-v2 .search-list-2 {
@@ -19,6 +22,7 @@
   width: 354px;
   margin: 10px auto;
   cursor: pointer;
+  color: #dbdbdb;
 }
 
 .navbar .search-engine-v2 .search-list-2 .search-elements {
@@ -29,10 +33,40 @@
 }
 
 .sidebar .back-to-main {
-  padding-left: 0;
-  font-weight: 200;
-  list-style: none;
-  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .back-to-main .main-site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #dbdbdb;
+  text-decoration: none;
+  padding: 14px;
+  margin-top: 16px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar .back-to-main .main-site:hover {
+  color: #141414;
+  background-color: #dbdbdb;
 }
 
 .sidebar .search-engine-v3 .query-3 {
@@ -45,6 +79,9 @@
   border-right: none;
   width: 200px;
   display: none;
+  background-color: #141414;
+  border-color: #dbdbdb;
+  color: #dbdbdb;
 }
 
 .sidebar .search-engine-v3 .search-list-3 {
@@ -57,6 +94,7 @@
   margin: 10px auto;
   cursor: pointer;
   font-size: 12px;
+  color: #dbdbdb;
 }
 
 .sidebar .search-engine-v3 .search-list-3 .search-elements {
@@ -83,6 +121,7 @@
   color: #dbdbdb;
   margin-top: 40px;
   margin-bottom: 30px;
+  color: #dbdbdb;
 }
 
 .wrapper .site-name label {
@@ -97,12 +136,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border-color: #dbdbdb;
   width: 100%;
 }
 
 .wrapper .site-row-1 .site-photo-1 {
   padding: 16px;
   border-bottom: none;
+  border-color: #dbdbdb;
 }
 
 .wrapper .site-row-1 .site-photo-1 .left-photo {
@@ -125,6 +166,7 @@
   text-justify: inter-word;
   line-height: 1.6;
   border-left: 1px #dbdbdb solid;
+  color: #dbdbdb;
 }
 
 .wrapper .site-row-1 .site-text-1 label {

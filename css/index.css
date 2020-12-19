@@ -1,5 +1,5 @@
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -11,6 +11,7 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #141414;
 }
 
 #content {
@@ -38,6 +39,10 @@ body {
   border-radius: 8px 8px 8px 8px;
   border: 2px solid;
   margin-top: 100px;
+  background-color: #141414;
+  color: #dbdbdb;
+  border-color: #dbdbdb;
+  font-size: 22px;
 }
 
 .wrapper .search-engine .search-list {
@@ -46,14 +51,33 @@ body {
   padding: 0;
   width: calc(40% + 54px);
   margin: 10px auto;
-  cursor: pointer;
+  color: #dbdbdb;
 }
 
 .wrapper .search-engine .search-list .search-elements {
-  padding: 8px 25px 5px 25px;
+  padding: 0;
   font-weight: 200;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border-bottom: 2px #dbdbdb solid;
+  font-size: 18px;
+}
+
+.wrapper .search-engine .search-list .search-elements .link {
+  display: block;
+  padding: 8px 25px;
+  width: 100%;
+  height: 100%;
+  color: #dbdbdb;
+  text-decoration: none;
+}
+
+.wrapper .search-engine .search-list .search-elements:hover {
+  background-color: #dbdbdb;
+}
+
+.wrapper .search-engine .search-list .search-elements:hover .link {
+  color: #141414;
 }
 
 .wrapper .callout {
@@ -92,6 +116,8 @@ body {
   position: fixed;
   border-bottom: 5px solid;
   width: 100%;
+  background-color: #141414;
+  border-color: #dbdbdb;
 }
 
 .navbar .div-menu-button {
@@ -101,17 +127,40 @@ body {
 }
 
 .navbar .div-menu-button .btn-menu {
-  padding: 10px 14px;
+  padding: 5px;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-left: 30px;
-  border: 2px solid;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #141414;
+  border: 0;
+}
+
+.navbar .div-menu-button .btn-menu .line {
+  width: 30px;
+  height: 3px;
+  margin: 3px;
+  background-color: #dbdbdb;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .div-menu-button .btn-menu:hover {
+  background-color: #dbdbdb;
+  color: #141414;
+}
+
+.navbar .div-menu-button .btn-menu:hover .line {
+  background-color: #141414;
 }
 
 .navbar .subject {
@@ -122,6 +171,7 @@ body {
   margin-left: calc(50% - 74.5px);
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  color: #dbdbdb;
 }
 
 .navbar .subject #search-text {
@@ -138,6 +188,8 @@ body {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   overflow-y: scroll;
+  background-color: #141414;
+  color: #dbdbdb;
 }
 
 .sidebar .dismiss {
@@ -152,6 +204,13 @@ body {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border-radius: 8px;
+  background-color: #141414;
+  color: #dbdbdb;
+}
+
+.sidebar .dismiss:hover {
+  background-color: #dbdbdb;
+  color: #141414;
 }
 
 .sidebar .sidebar-header {
@@ -159,6 +218,8 @@ body {
   padding-bottom: 0;
   font-size: 24px;
   text-align: left;
+  background-color: #141414;
+  color: #dbdbdb;
 }
 
 .sidebar .list-unstyled {
@@ -173,6 +234,13 @@ body {
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #dbdbdb;
+  text-decoration: none;
+}
+
+.sidebar .list-unstyled li a:hover {
+  background-color: #dbdbdb;
+  color: #141414;
 }
 
 .sidebar .list-unstyled li a[data-toggle="collapse"] {
@@ -189,6 +257,8 @@ body {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   font-size: 16px;
+  background-color: #141414;
+  color: #dbdbdb;
 }
 
 .sidebar .list-unstyled li .list-unstyled .submenu-elements .photo-icon {
@@ -201,9 +271,15 @@ body {
   height: 16px;
 }
 
+.sidebar .list-unstyled li .list-unstyled .submenu-elements:hover {
+  background-color: #dbdbdb;
+  color: #141414;
+}
+
 .sidebar .bottom-border {
   height: 1px;
   width: 100%;
+  background-color: #dbdbdb;
 }
 
 .overlay {

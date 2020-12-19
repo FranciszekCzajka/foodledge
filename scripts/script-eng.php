@@ -9,7 +9,7 @@ if($link === false){
 }
 
 if(isset($_REQUEST['term'])){
-    $sql = 'select id, name_pl FROM artykuly WHERE name_pl LIKE ? order by name_pl';
+    $sql = 'select id, name_eng FROM artykuly WHERE name_eng LIKE ? order by name_eng';
 
     if($stmt = mysqli_prepare($link, $sql)){
         mysqli_stmt_bind_param($stmt, 's', $param_term);
@@ -21,10 +21,10 @@ if(isset($_REQUEST['term'])){
 
             if(mysqli_num_rows($result) > 0){
                 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-                    echo '<a href="subsite.php?name='.$row['name_pl'].'&id='.$row['id'].'""><li class="search-elements light light-hover dark-border">'.$row['name_pl'].'</li></a>';
+                    echo '<li class="search-elements"><a class="link" href="subsite.php?name='.$row['name_eng'].'&id='.$row['id'].'"">'.$row['name_eng'].'</a></li>';
                 }
             } else{
-                echo '<li class="search-elements light light-hover dark-border">Brak wyników</li>';
+                echo '<li class="search-elements">No results</li>';
             }
         } else{
             echo "Bład wykonania $sql. " . mysqli_error($link);
