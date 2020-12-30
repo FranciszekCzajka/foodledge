@@ -21,10 +21,10 @@ if(isset($_REQUEST['term'])){
 
             if(mysqli_num_rows($result) > 0){
                 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-                    echo '<li class="search-elements"><a class="link" href="subsite.php?name='.$row['name_pl'].'&id='.$row['id'].'"">'.$row['name_pl'].'</a></li>';
+                    echo '<li class="search-elements"><a class="link" href="subsite.html?name='.$row['name_pl'].'&id='.$row['id'].'"">'.$row['name_pl'].'</a></li>';
                 }
             } else{
-                echo '<li class="search-elements">Brak wyników</li>';
+                echo '<li class="no-results">Brak wyników</li>';
             }
         } else{
             echo "Bład wykonania $sql. " . mysqli_error($link);

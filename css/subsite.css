@@ -1,3 +1,12 @@
+.navbar .search-engine-v2 {
+  position: fixed;
+  right: 25px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  z-index: 4;
+}
+
 .navbar .search-engine-v2 .query-2 {
   padding: 10px 25px;
   width: 300px;
@@ -15,7 +24,7 @@
 .navbar .search-engine-v2 .search-list-2 {
   position: fixed;
   top: 70px;
-  right: 15px;
+  right: 40px;
   text-align: left;
   list-style-type: none;
   padding: 0;
@@ -23,13 +32,62 @@
   margin: 10px auto;
   cursor: pointer;
   color: #dbdbdb;
+  z-index: 4;
 }
 
 .navbar .search-engine-v2 .search-list-2 .search-elements {
-  padding: 8px 25px 5px 25px;
+  padding: 0;
   font-weight: 200;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border-bottom: 2px #dbdbdb solid;
+  font-size: 18px;
+  background-color: #141414;
+}
+
+.navbar .search-engine-v2 .search-list-2 .search-elements .link {
+  display: block;
+  padding: 8px 25px;
+  width: 100%;
+  height: 100%;
+  color: #dbdbdb;
+  text-decoration: none;
+}
+
+.navbar .search-engine-v2 .search-list-2 .search-elements:nth-child(1) {
+  border-radius: 8px 8px 0 0;
+}
+
+.navbar .search-engine-v2 .search-list-2 .search-elements:nth-last-child(1) {
+  border: 0;
+  border-radius: 0 0 8px 8px;
+}
+
+.navbar .search-engine-v2 .search-list-2 .search-elements:only-child {
+  border-radius: 8px;
+}
+
+.navbar .search-engine-v2 .search-list-2 .search-elements:hover {
+  background-color: #dbdbdb;
+}
+
+.navbar .search-engine-v2 .search-list-2 .search-elements:hover .link {
+  color: #141414;
+}
+
+.navbar .search-engine-v2 .search-list-2 .no-results {
+  font-weight: 200;
+  padding: 8px 25px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px #dbdbdb solid;
+  font-size: 18px;
+  background-color: #141414;
+}
+
+.navbar .search-engine-v2 .search-list-2 .no-results:hover {
+  background-color: #dbdbdb;
+  color: #141414;
 }
 
 .sidebar .back-to-main {

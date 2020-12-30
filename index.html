@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <title>FOOTLEDGE</title>
+        <title>FOODLEDGE</title>
 
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
@@ -19,14 +19,12 @@
     </head>
     <body>
         <nav class="navbar">
-            <div class="div-menu-button">
-                <button type="submit" class="btn-menu" id="sidebarCollapse" name="menu">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </button>
-                <div class="subject"><label id="search-text">WYSZUKIWARKA</label></div>
-            </div>
+            <button type="submit" class="btn-menu" id="sidebarCollapse" name="menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <div class="foodledge">FOODLEDGE</div>
         </nav>
         <nav class="sidebar">
             <div class="dismiss">
@@ -81,7 +79,6 @@
                 $("#themes").html("Theme <i class='fas fa-angle-down'></i>");
                 $("#light").html('<img src="images/sun.png" class="photo-icon" alt="icon"> Light');
                 $("#dark").html("<img src='images/moon.png' class='photo-icon' alt='icon'> Dark");
-                $("#search-text").html("SEARCH ENGINE");
                 $(".search-query").attr("placeholder", "Enter object to search");
                 $(".cookies").html("This website uses cookies. If you continue to use our services, we will assume that you agree to the use of such cookies.");
             }
@@ -139,7 +136,6 @@
                     $("#themes").html("Tryb <i class='fas fa-angle-down'></i>");
                     $("#light").html('<img src="images/sun.png" class="photo-icon" alt="icon"> Jasny');
                     $("#dark").html("<img src='images/moon.png' class='photo-icon' alt='icon'> Ciemny");
-                    $("#search-text").html("WYSZUKIWARKA");
                     $(".search-query").attr("placeholder", "Wpisz wyszukiwany obiekt");
                     $(".cookies").html("Strona wykorzystuje pliki cookies. Korzystając z niej, zgadzasz się na użycie plików cookies.");
                 });
@@ -155,7 +151,6 @@
                     $("#themes").html("Theme <i class='fas fa-angle-down'></i>");
                     $("#light").html('<img src="images/sun.png" class="photo-icon" alt="icon"> Light');
                     $("#dark").html("<img src='images/moon.png' class='photo-icon' alt='icon'> Dark");
-                    $("#search-text").html("SEARCH ENGINE");
                     $(".search-query").attr("placeholder", "Enter object to search");
                     $(".cookies").html("This website uses cookies. If you continue to use website, it means that you agree to the use of such cookies.");
                 });

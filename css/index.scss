@@ -32,7 +32,7 @@ body {
             padding: 10px 25px;
             width: 40%;
             font-size: 18px;
-            border-radius: 8px 8px 8px 8px;
+            border-radius: 8px;
             border: 2px solid;
             margin-top: 100px;
             background-color: $dark;
@@ -62,11 +62,32 @@ body {
                     text-decoration: none;
                 }
             }
+            .search-elements:nth-child(1) {
+                border-radius: 8px 8px 0 0;
+            }
+            .search-elements:nth-last-child(1) {
+                border: 0;
+                border-radius: 0 0 8px 8px;
+            }
+            .search-elements:only-child {
+                border-radius: 8px;
+            }
             .search-elements:hover {
                 background-color: $light;
                 .link {
                     color: $dark;
                 }
+            }
+            .no-results {
+                font-weight: 200;
+                padding: 8px 25px;
+                transition: all 0.3s ease-in-out;
+                border-bottom: 2px $light solid;
+                font-size: 18px;
+            }
+            .no-results:hover {
+                background-color: $light;
+                color: $dark;
             }
         }
     }
@@ -89,6 +110,9 @@ body {
             transition: all 0.3s ease;
             font-weight: bold;
         }
+        .closebtn:hover {
+            color: #ff6663;
+        }
         .callout-container {
             background-color: $dark;
             color: $light;
@@ -99,55 +123,51 @@ body {
 
 .navbar {
     top: 0;
-    z-index: 15;
     height: 95px;
     position: fixed;
+    display: flex;
+    align-items: center;
     border-bottom: 5px solid;
     width: 100%;
     background-color: $dark;
     border-color: #dbdbdb;
-    .div-menu-button {
-        position: fixed;
-        top: 25px;
-        text-align: left;
-        .btn-menu {
-            padding: 5px;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
+    z-index: 1;
+    .btn-menu {
+        padding: 6px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: $dark;
+        border: 0;
+        z-index: 3;
+        .line {
+            width: 30px;
+            height: 3px;
+            margin: 3px;
+            background-color: $light;
             transition: all 0.3s ease-in-out;
-            margin-left: 30px;
-            display: inline-flex;
-            flex-direction: column;
-            background-color: $dark;
-            border: 0;
-            .line {
-                width: 30px;
-                height: 3px;
-                margin: 3px;
-                background-color: $light;
-                transition: all 0.3s ease-in-out;
-            }
-        }
-        .btn-menu:hover {
-            background-color: #dbdbdb;
-            color: #141414;
-            .line {
-                background-color: $dark;
-            }
         }
     }
-    .subject {
-        position: fixed;
+    .btn-menu:hover {
+        background-color: #dbdbdb;
+        color: #141414;
+        .line {
+            background-color: $dark;
+        }
+    }
+    .foodledge {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        text-align: center;
         font-weight: bold;
         font-size: 38px;
-        display: inline-block;
-        margin-left: calc(50% - 74.5px);
-        transform: translate(-50%);
         color: $light;
-        #search-text {
-            letter-spacing: 2px;
-        }
+        letter-spacing: 2px;
     }
 }
 
