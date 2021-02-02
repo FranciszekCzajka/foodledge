@@ -1,0 +1,7 @@
+<?php
+
+  $id=$_GET['id'];
+  $name=$_GET['name'];
+
+  echo "<img class='site-image' src='images/".$id.".png' alt=".$name.">";      
+?>

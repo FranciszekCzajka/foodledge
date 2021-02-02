@@ -4,5 +4,6 @@
     "html.format.wrapAttributes": "force-aligned",
     "prettier.printWidth": 10000,
     "grunt.autoDetect": "off",
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "editor.multiCursorModifier": "ctrlCmd"
 }

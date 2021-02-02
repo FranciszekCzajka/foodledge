@@ -25,7 +25,13 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <div class="foodledge">FOODLEDGE</div>
+
+            <div class="foodledge">
+                <div class="icon">
+                    <img class="icon-photo" src="images/icon.png" alt="icon" />
+                </div>
+                <div class="site-name">FOODLEDGE</div>
+            </div>
             <div class="search-engine-v2">
                 <input type="text" class="search-query query-2" name="text-query" placeholder="Wpisz wyszukiwany obiekt" />
                 <ul class="search-list-2"></ul>
@@ -61,14 +67,14 @@
         </nav>
 
         <div class="wrapper">
-            <div class="site-name"></div>
+            <div class="site-title"></div>
 
-            <div class="site-row-1">
-                <div class="site-photo-1">
-                    <div class="left-photo"></div>
-                    <div class="left-name"></div>
+            <div class="site-content">
+                <div class="site-photo">
+                    <div class="container-photo"></div>
+                    <div class="photo-name"></div>
                 </div>
-                <div class="site-text-1"></div>
+                <div class="site-nutri-vars"></div>
             </div>
 
             <div class="callout">
@@ -100,17 +106,17 @@
             var id = $.urlParam("id");
 
             if (Cookies.get("lang") == 0) {
-                $(".site-text-1").load("scripts/des-pl.php?id=" + id);
-                $(".left-photo").load("scripts/photo-pl.php?id=" + id);
-                $(".site-name").load("scripts/name-pl.php?id=" + id);
-                $(".left-name").load("scripts/left-name-pl.php?id=" + id);
+                $(".container-photo").load("scripts/photo-pl.php?id=" + id);
+                $(".site-title").load("scripts/name-pl.php?id=" + id);
+                $(".photo-name").load("scripts/name-pl.php?id=" + id);
+                $(".site-nutri-vars").load("scripts/des-pl.php?id=" + id);
             }
 
             if (Cookies.get("lang") == 1) {
-                $(".site-text-1").load("scripts/des-eng.php?id=" + id);
-                $(".left-photo").load("scripts/photo-eng.php?id=" + id);
-                $(".site-name").load("scripts/name-eng.php?id=" + id);
-                $(".left-name").load("scripts/left-name-eng.php?id=" + id);
+                $(".container-photo").load("scripts/photo-eng.php?id=" + id);
+                $(".site-title").load("scripts/name-eng.php?id=" + id);
+                $(".photo-name").load("scripts/name-eng.php?id=" + id);
+                $(".site-nutri-vars").load("scripts/des-eng.php?id=" + id);
             }
         </script>
 
@@ -140,12 +146,12 @@
             $(".closebtn").click(function () {
                 Cookies.set("cookie", "1");
                 $(".callout").css("display", "none");
-                $(".site-text-1").css("marginBottom", "0px");
+                $(".site-content").css("marginBottom", "0px");
             });
 
             if (Cookies.get("cookie") == 1) {
                 $(".callout").css("display", "none");
-                $(".site-text-1").css("marginBottom", "0px");
+                $(".site-content").css("marginBottom", "0px");
             }
         </script>
 
@@ -157,8 +163,8 @@
 
                 $(".dismiss, .overlay").on("click", function () {
                     $(".sidebar").removeClass("active");
-                    $(".overlay").removeClass("active");
                     setTimeout(function () {
+                        $(".overlay").removeClass("active");
                         $(".query-3").val("").focus();
                         $(".collapse").removeClass("show");
                     }, 350);
@@ -191,10 +197,10 @@
                     $(".main-site").html("Powrót do strony głownej");
                     $(".cookies").html("Strona wykorzystuje pliki cookies. Korzystając z niej, zgadzasz się na użycie plików cookies.");
 
-                    $(".site-text-1").load("scripts/des-pl.php?id=" + id);
-                    $(".left-photo").load("scripts/photo-pl.php?id=" + id);
-                    $(".site-name").load("scripts/name-pl.php?id=" + id);
-                    $(".left-name").load("scripts/left-name-pl.php?id=" + id);
+                    $(".container-photo").load("scripts/photo-pl.php?id=" + id);
+                    $(".site-title").load("scripts/name-pl.php?id=" + id);
+                    $(".photo-name").load("scripts/name-pl.php?id=" + id);
+                    $(".site-nutri-vars").load("scripts/des-pl.php?id=" + id);
                 });
 
                 $("#usa").click(function () {
@@ -213,10 +219,10 @@
                     $(".main-site").html("Go back to main site");
                     $(".cookies").html("This website uses cookies. If you continue to use website, it means that you agree to the use of such cookies.");
 
-                    $(".site-text-1").load("scripts/des-eng.php?id=" + id);
-                    $(".left-photo").load("scripts/photo-eng.php?id=" + id);
-                    $(".site-name").load("scripts/name-eng.php?id=" + id);
-                    $(".left-name").load("scripts/left-name-eng.php?id=" + id);
+                    $(".container-photo").load("scripts/photo-eng.php?id=" + id);
+                    $(".site-title").load("scripts/name-eng.php?id=" + id);
+                    $(".photo-name").load("scripts/name-eng.php?id=" + id);
+                    $(".site-nutri-vars").load("scripts/des-eng.php?id=" + id);
                 });
             });
         </script>

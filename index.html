@@ -24,7 +24,12 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </button>
-            <div class="foodledge">FOODLEDGE</div>
+            <div class="foodledge">
+                <div class="icon">
+                    <img class="icon-photo" src="images/icon.png" alt="icon" />
+                </div>
+                <div class="site-name">FOODLEDGE</div>
+            </div>
         </nav>
         <nav class="sidebar">
             <div class="dismiss">
@@ -107,8 +112,8 @@
 
                 $(".dismiss, .overlay").on("click", function () {
                     $(".sidebar").removeClass("active");
-                    $(".overlay").removeClass("active");
                     setTimeout(function () {
+                        $(".overlay").removeClass("active");
                         $(".query-3").val("").focus();
                         $(".collapse").removeClass("show");
                     }, 350);
@@ -120,6 +125,19 @@
                     $(".collapse.in").toggleClass("in");
                     $("a[aria-expanded=true]").attr("aria-expanded", "false");
                 });
+            });
+        </script>
+
+        <script>
+            $(document).keydown(function (e) {
+                if (e.keyCode == 40) {
+                    $(".search-list").closest(".search-list").nextAll(":has(.link):first").find(".link").focus();
+                    console.log("next");
+                }
+                if (e.keyCode == 38) {
+                    $(".search-list").find(".link").focus();
+                    console.log("prev");
+                }
             });
         </script>
 

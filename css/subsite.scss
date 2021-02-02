@@ -15,18 +15,18 @@
             margin-top: 24px;
             float: right;
             margin-right: 15px;
-            background-color: $dark;
+            background-color: $green;
             color: $light;
-            border-color: #dbdbdb;
+            border-color: $light;
         }
         .search-list-2 {
             position: fixed;
-            top: 70px;
+            top: 100px;
             right: 40px;
             text-align: left;
             list-style-type: none;
             padding: 0;
-            width: 354px;
+            width: 300px;
             margin: 10px auto;
             cursor: pointer;
             color: $light;
@@ -36,31 +36,43 @@
                 font-weight: 200;
                 transition: all 0.3s ease-in-out;
                 border-bottom: 2px $light solid;
-                font-size: 18px;
-                background-color: $dark;
+                font-size: 20px;
+                background-color: $green;
                 .link {
                     display: block;
-                    padding: 8px 25px;
+                    padding: 10px 28px;
                     width: 100%;
                     height: 100%;
                     color: $light;
                     text-decoration: none;
+                    &:focus {
+                        background-color: $dark-green;
+                    }
                 }
-            }
-            .search-elements:nth-child(1) {
-                border-radius: 8px 8px 0 0;
-            }
-            .search-elements:nth-last-child(1) {
-                border: 0;
-                border-radius: 0 0 8px 8px;
-            }
-            .search-elements:only-child {
-                border-radius: 8px;
-            }
-            .search-elements:hover {
-                background-color: $light;
-                .link {
-                    color: $dark;
+                &:nth-child(1) {
+                    border-radius: 8px 8px 0 0;
+                    .link:focus {
+                        background-color: $dark-green;
+                        border-radius: 8px 8px 0 0;
+                    }
+                }
+                &:nth-last-child(1) {
+                    border: 0;
+                    border-radius: 0 0 8px 8px;
+                    .link:focus {
+                        background-color: $dark-green;
+                        border-radius: 0 0 8px 8px;
+                    }
+                }
+                &:only-child {
+                    border-radius: 8px;
+                    .link:focus {
+                        border-radius: 8px;
+                        background-color: $dark-green;
+                    }
+                }
+                &:hover {
+                    background-color: $dark-green;
                 }
             }
             .no-results {
@@ -68,12 +80,14 @@
                 padding: 8px 25px;
                 transition: all 0.3s ease-in-out;
                 border-bottom: 2px $light solid;
-                font-size: 18px;
-                background-color: $dark;
-            }
-            .no-results:hover {
-                background-color: $light;
-                color: $dark;
+                font-size: 20px;
+                background-color: $green;
+                color: $light;
+                border-radius: 8px;
+                cursor: default;
+                &:hover {
+                    background-color: $dark-green;
+                }
             }
         }
     }
@@ -97,7 +111,7 @@
             transition: all 0.3s ease-in-out;
         }
         .main-site:hover {
-            color: $dark;
+            color: $green;
             background-color: $light;
         }
     }
@@ -112,8 +126,8 @@
             border-right: none;
             width: 200px;
             display: none;
-            background-color: $dark;
-            border-color: #dbdbdb;
+            background-color: $green;
+            border-color: $light;
             color: $light;
         }
         .search-list-3 {
@@ -146,47 +160,50 @@
 }
 
 .wrapper {
-    .site-name {
+    .site-title {
         text-align: center;
         font-weight: bold;
         font-size: 50px;
-        color: $light;
+        color: $dark-green;
         margin-top: 40px;
         margin-bottom: 30px;
-        color: #dbdbdb;
         label {
             letter-spacing: 2px;
         }
     }
-    .site-row-1 {
+    .site-content {
         display: flex;
         flex-direction: row;
-        border-color: #dbdbdb;
+        border-color: $light;
         width: 100%;
-        .site-photo-1 {
+        .site-photo {
             padding: 16px;
             border-bottom: none;
-            border-color: #dbdbdb;
-            .left-photo {
-                width: 300px;
-                border: 1px $light solid;
-                border-radius: 5px;
-                height: 194px;
+            border-color: $light;
+            .container-photo {
+                width: 400px;
+                height: 250px;
+                .photo {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 26px;
+                    object-fit: cover;
+                }
             }
-            .left-name {
+            .photo-name {
                 font-size: 18px;
                 margin-top: 6px;
                 text-align: center;
-                color: $light;
+                color: $dark-green;
             }
         }
-        .site-text-1 {
+        .site-nutri-vars {
             padding: 10px 96px 16px 16px;
             text-align: justify;
             text-justify: inter-word;
             line-height: 1.6;
-            border-left: 1px $light solid;
-            color: $light;
+            border-left: 1px $dark-green solid;
+            color: $dark-green;
             label {
                 letter-spacing: 2px;
                 font-size: 18px;
