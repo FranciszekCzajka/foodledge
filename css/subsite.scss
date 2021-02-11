@@ -160,13 +160,14 @@
 }
 
 .wrapper {
+    flex-direction: column;
     .site-title {
         text-align: center;
         font-weight: bold;
         font-size: 50px;
         color: $dark-green;
         margin-top: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         label {
             letter-spacing: 2px;
         }
@@ -174,6 +175,7 @@
     .site-content {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         border-color: $light;
         width: 100%;
         .site-photo {
@@ -198,15 +200,46 @@
             }
         }
         .site-nutri-vars {
-            padding: 10px 96px 16px 16px;
             text-align: justify;
             text-justify: inter-word;
             line-height: 1.6;
             border-left: 1px $dark-green solid;
             color: $dark-green;
-            label {
-                letter-spacing: 2px;
-                font-size: 18px;
+            .site-nutri-table {
+                margin-left: 16px;
+                .site-nutri-rows {
+                    .site-nutri-header {
+                        font-size: 18px;
+                        padding: 6px;
+                        text-align: right;
+                    }
+                    .site-nutri-header:nth-child(1) {
+                        width: 210px;
+                    }
+                    .site-nutri-header:nth-child(2) {
+                        width: 100px;
+                    }
+                    .site-nutri-header:nth-child(3) {
+                        width: 150px;
+                    }
+                    .site-nutri-data {
+                        padding: 6px;
+                        text-align: right;
+                    }
+                    .site-nutri-name {
+                        padding: 6px;
+                        text-align: left;
+                    }
+                    .site-nutri-subname {
+                        font-size: 14px;
+                        padding: 6px 6px 6px 24px;
+                        text-align: left;
+                    }
+                    .site-nutri-note {
+                        padding: 6px;
+                        text-align: right;
+                    }
+                }
             }
         }
     }

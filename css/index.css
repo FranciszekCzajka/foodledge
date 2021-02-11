@@ -11,7 +11,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: #fbfbfb;
+  background-color: #fcfcfc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +32,7 @@ body .navbar {
           align-items: center;
   width: 100%;
   background-color: #305f4a;
-  border-color: #fbfbfb;
+  border-color: #fcfcfc;
   z-index: 1;
 }
 
@@ -58,7 +58,7 @@ body .navbar .btn-menu .line {
   width: 36px;
   height: 4px;
   margin: 3px;
-  background-color: #fbfbfb;
+  background-color: #fcfcfc;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
@@ -83,19 +83,32 @@ body .navbar .icon .icon-photo {
 body .navbar .foodledge {
   position: absolute;
   width: 100%;
-  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-body .navbar .foodledge .site-name {
+body .navbar .foodledge .home-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+body .navbar .foodledge .home-link .site-name {
   font-weight: bold;
   font-size: 38px;
-  color: #fbfbfb;
+  color: #fcfcfc;
   letter-spacing: 2px;
 }
 
@@ -110,7 +123,7 @@ body .sidebar {
   transition: all 0.4s;
   overflow-y: scroll;
   background-color: #305f4a;
-  color: #fbfbfb;
+  color: #fcfcfc;
 }
 
 body .sidebar .dismiss {
@@ -126,11 +139,11 @@ body .sidebar .dismiss {
   transition: all 0.4s;
   border-radius: 8px;
   background-color: #305f4a;
-  color: #fbfbfb;
+  color: #fcfcfc;
 }
 
 body .sidebar .dismiss:hover {
-  background-color: #fbfbfb;
+  background-color: #fcfcfc;
   color: #305f4a;
 }
 
@@ -140,7 +153,7 @@ body .sidebar .sidebar-header {
   font-size: 24px;
   text-align: left;
   background-color: #305f4a;
-  color: #fbfbfb;
+  color: #fcfcfc;
 }
 
 body .sidebar .list-unstyled {
@@ -155,12 +168,12 @@ body .sidebar .list-unstyled li a {
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: #fbfbfb;
+  color: #fcfcfc;
   text-decoration: none;
 }
 
 body .sidebar .list-unstyled li a:hover {
-  background-color: #fbfbfb;
+  background-color: #fcfcfc;
   color: #305f4a;
 }
 
@@ -179,7 +192,7 @@ body .sidebar .list-unstyled li .list-unstyled .submenu-elements {
   cursor: pointer;
   font-size: 16px;
   background-color: #305f4a;
-  color: #fbfbfb;
+  color: #fcfcfc;
 }
 
 body .sidebar .list-unstyled li .list-unstyled .submenu-elements .photo-icon {
@@ -193,36 +206,41 @@ body .sidebar .list-unstyled li .list-unstyled .submenu-elements .flag-icon {
 }
 
 body .sidebar .list-unstyled li .list-unstyled .submenu-elements:hover {
-  background-color: #fbfbfb;
+  background-color: #fcfcfc;
   color: #305f4a;
 }
 
 body .sidebar .bottom-border {
   height: 1px;
   width: 100%;
-  background-color: #fbfbfb;
+  background-color: #fcfcfc;
 }
 
 body .wrapper {
-  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 100px;
-  width: 70%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 body .wrapper .search-engine {
-  width: 100%;
+  width: 45%;
 }
 
 body .wrapper .search-engine .query {
   padding: 16px 30px;
-  width: 65%;
+  width: 100%;
   font-size: 18px;
   border-radius: 10px;
   margin-top: 100px;
   background-color: #305f4a;
-  color: #fbfbfb;
+  color: #fcfcfc;
   border-color: #305f4a;
   font-size: 24px;
   border: 0;
@@ -232,7 +250,7 @@ body .wrapper .search-engine .search-list {
   text-align: left;
   list-style-type: none;
   padding: 0;
-  width: 65%;
+  width: 100%;
   margin: 10px auto;
   color: #305f4a;
 }
@@ -242,7 +260,7 @@ body .wrapper .search-engine .search-list .search-elements {
   font-weight: 200;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: 2px #fbfbfb solid;
+  border-bottom: 2px #fcfcfc solid;
   font-size: 20px;
   background-color: #305f4a;
 }
@@ -252,7 +270,7 @@ body .wrapper .search-engine .search-list .search-elements .link {
   padding: 10px 28px;
   width: 100%;
   height: 100%;
-  color: #fbfbfb;
+  color: #fcfcfc;
   text-decoration: none;
 }
 
@@ -297,10 +315,10 @@ body .wrapper .search-engine .search-list .no-results {
   padding: 8px 25px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: 2px #fbfbfb solid;
+  border-bottom: 2px #fcfcfc solid;
   font-size: 20px;
   background-color: #305f4a;
-  color: #fbfbfb;
+  color: #fcfcfc;
   border-radius: 8px;
 }
 
@@ -322,7 +340,7 @@ body .wrapper .callout .closebtn {
   position: absolute;
   top: 5px;
   right: 15px;
-  color: #fbfbfb;
+  color: #fcfcfc;
   font-size: 35px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -336,7 +354,7 @@ body .wrapper .callout .closebtn:hover {
 
 body .wrapper .callout .callout-container {
   background-color: #305f4a;
-  color: #fbfbfb;
+  color: #fcfcfc;
   padding: 10px 50px;
 }
 

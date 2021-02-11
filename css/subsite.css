@@ -17,8 +17,8 @@
   float: right;
   margin-right: 15px;
   background-color: #305f4a;
-  color: #fbfbfb;
-  border-color: #fbfbfb;
+  color: #fcfcfc;
+  border-color: #fcfcfc;
 }
 
 .navbar .search-engine-v2 .search-list-2 {
@@ -31,7 +31,7 @@
   width: 300px;
   margin: 10px auto;
   cursor: pointer;
-  color: #fbfbfb;
+  color: #fcfcfc;
   z-index: 4;
 }
 
@@ -40,7 +40,7 @@
   font-weight: 200;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: 2px #fbfbfb solid;
+  border-bottom: 2px #fcfcfc solid;
   font-size: 20px;
   background-color: #305f4a;
 }
@@ -50,7 +50,7 @@
   padding: 10px 28px;
   width: 100%;
   height: 100%;
-  color: #fbfbfb;
+  color: #fcfcfc;
   text-decoration: none;
 }
 
@@ -95,10 +95,10 @@
   padding: 8px 25px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: 2px #fbfbfb solid;
+  border-bottom: 2px #fcfcfc solid;
   font-size: 20px;
   background-color: #305f4a;
-  color: #fbfbfb;
+  color: #fcfcfc;
   border-radius: 8px;
   cursor: default;
 }
@@ -130,7 +130,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fbfbfb;
+  color: #fcfcfc;
   text-decoration: none;
   padding: 14px;
   margin-top: 16px;
@@ -141,7 +141,7 @@
 
 .sidebar .back-to-main .main-site:hover {
   color: #305f4a;
-  background-color: #fbfbfb;
+  background-color: #fcfcfc;
 }
 
 .sidebar .search-engine-v3 .query-3 {
@@ -155,8 +155,8 @@
   width: 200px;
   display: none;
   background-color: #305f4a;
-  border-color: #fbfbfb;
-  color: #fbfbfb;
+  border-color: #fcfcfc;
+  color: #fcfcfc;
 }
 
 .sidebar .search-engine-v3 .search-list-3 {
@@ -169,7 +169,7 @@
   margin: 10px auto;
   cursor: pointer;
   font-size: 12px;
-  color: #fbfbfb;
+  color: #fcfcfc;
 }
 
 .sidebar .search-engine-v3 .search-list-3 .search-elements {
@@ -189,13 +189,20 @@
           transform: translateY(-50%);
 }
 
+.wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .wrapper .site-title {
   text-align: center;
   font-weight: bold;
   font-size: 50px;
   color: #223f33;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .wrapper .site-title label {
@@ -210,14 +217,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-color: #fbfbfb;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-color: #fcfcfc;
   width: 100%;
 }
 
 .wrapper .site-content .site-photo {
   padding: 16px;
   border-bottom: none;
-  border-color: #fbfbfb;
+  border-color: #fcfcfc;
 }
 
 .wrapper .site-content .site-photo .container-photo {
@@ -241,7 +251,6 @@
 }
 
 .wrapper .site-content .site-nutri-vars {
-  padding: 10px 96px 16px 16px;
   text-align: justify;
   text-justify: inter-word;
   line-height: 1.6;
@@ -249,8 +258,46 @@
   color: #223f33;
 }
 
-.wrapper .site-content .site-nutri-vars label {
-  letter-spacing: 2px;
+.wrapper .site-content .site-nutri-vars .site-nutri-table {
+  margin-left: 16px;
+}
+
+.wrapper .site-content .site-nutri-vars .site-nutri-table .site-nutri-rows .site-nutri-header {
   font-size: 18px;
+  padding: 6px;
+  text-align: right;
+}
+
+.wrapper .site-content .site-nutri-vars .site-nutri-table .site-nutri-rows .site-nutri-header:nth-child(1) {
+  width: 210px;
+}
+
+.wrapper .site-content .site-nutri-vars .site-nutri-table .site-nutri-rows .site-nutri-header:nth-child(2) {
+  width: 100px;
+}
+
+.wrapper .site-content .site-nutri-vars .site-nutri-table .site-nutri-rows .site-nutri-header:nth-child(3) {
+  width: 150px;
+}
+
+.wrapper .site-content .site-nutri-vars .site-nutri-table .site-nutri-rows .site-nutri-data {
+  padding: 6px;
+  text-align: right;
+}
+
+.wrapper .site-content .site-nutri-vars .site-nutri-table .site-nutri-rows .site-nutri-name {
+  padding: 6px;
+  text-align: left;
+}
+
+.wrapper .site-content .site-nutri-vars .site-nutri-table .site-nutri-rows .site-nutri-subname {
+  font-size: 14px;
+  padding: 6px 6px 6px 24px;
+  text-align: left;
+}
+
+.wrapper .site-content .site-nutri-vars .site-nutri-table .site-nutri-rows .site-nutri-note {
+  padding: 6px;
+  text-align: right;
 }
 /*# sourceMappingURL=subsite.css.map */
